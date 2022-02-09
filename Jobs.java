@@ -20,8 +20,8 @@ public void applyForJob() throws InterruptedException {
     TimeUnit.SECONDS.sleep(5);
 
     //login details
-    String email = "ahmedsaheed2@outlook.com";
-    String password = "Abdulrazaq1";
+    String email = "youremail@email.com";
+    String password = "yourpassword";
 
     //finding login element using the id
 
@@ -85,7 +85,7 @@ public void applyForJob() throws InterruptedException {
         }else{
             continue;
         }
-
+        // TO BE CONTINUED
     }
 
 }
