@@ -69,7 +69,7 @@ public void applyForJob() throws InterruptedException {
         String choice = app.nextLine();
         if(choice.equals("apply")){
             System.out.println("You are currently applying for this job.");
-            String phoneNumber = "0874197677";
+            String phoneNumber = "123456789";
             WebElement apply = driver.findElement(By.cssSelector(".jobs-s-apply button"));
             apply.click();
             System.out.println("Please provide your CV from the pop up");
