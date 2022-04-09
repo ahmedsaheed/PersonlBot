@@ -11,7 +11,7 @@ public class Jobs {
 
 public void applyForJob() throws InterruptedException {
     //
-    System.setProperty("webdriver.chrome.driver","/Users/ahmedsaheed/Desktop/chromedriver");
+    System.setProperty("webdriver.chrome.driver","/Users/ahmedsaheed/Desktop/Desktop/chromedriver");
     WebDriver driver  = new ChromeDriver();
 
     //navigating to the website
@@ -20,8 +20,8 @@ public void applyForJob() throws InterruptedException {
     TimeUnit.SECONDS.sleep(5);
 
     //login details
-    String email = "youremail@email.com";
-    String password = "yourpassword";
+    String email = "ahmedsaheed2@outlook.com";
+    String password = "Abdulrazaq1";
 
     //finding login element using the id
 
@@ -46,7 +46,7 @@ public void applyForJob() throws InterruptedException {
     TimeUnit.SECONDS.sleep(1);
     searchLocation.sendKeys(Keys.RETURN);
     TimeUnit.SECONDS.sleep(5);
-    
+
     //All jobs found are passed into a list and return individually.
     List<WebElement> listOfJobs = driver.findElements(By.className("occludable-update"));
     WebElement jobs= null;
@@ -69,7 +69,7 @@ public void applyForJob() throws InterruptedException {
         String choice = app.nextLine();
         if(choice.equals("apply")){
             System.out.println("You are currently applying for this job.");
-            String phoneNumber = "123456789";
+            String phoneNumber = "0874197677";
             WebElement apply = driver.findElement(By.cssSelector(".jobs-s-apply button"));
             apply.click();
             System.out.println("Please provide your CV from the pop up");
@@ -78,6 +78,7 @@ public void applyForJob() throws InterruptedException {
             fill.sendKeys(phoneNumber);
             WebElement nextButton = driver.findElement(By.cssSelector("footer button"));
             nextButton.click();
+            TimeUnit.SECONDS.sleep(2);
             System.out.println("Your CV has now been added");
             nextButton.click();
 
@@ -85,14 +86,14 @@ public void applyForJob() throws InterruptedException {
         }else{
             continue;
         }
-        // TO BE CONTINUED
+
     }
 
 }
-        
-        
 
-    
+
+
+
 
 
 }
